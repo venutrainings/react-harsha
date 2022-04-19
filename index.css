@@ -1,0 +1,94 @@
+.heading{
+	color: blue;
+	font-family: "Roboto";
+	text-align: center;
+}
+@media screen and (min-width: 800px){
+	.heading{
+		color: red;
+	}
+}
+
+.btn-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;	
+}
+
+.get-btn:hover{
+	background-color: black;
+	border: 2px solid white;
+}
+
+.get-btn {
+	background-color: red;
+	border-radius: 5px ;
+	border: none;
+	color: white;
+	padding: 5px;
+	font-size: 12px;
+	height: 25px;
+	width: 65px;
+	font-family: "Roboto";
+	cursor: pointer;
+	margin-left: 10px;
+}
+
+.post-btn:hover{
+	background-color: black;
+	border: 2px solid white;
+}
+
+.post-btn{
+	background-color: blue;
+	border-radius: 5px ;
+	border: none;
+	color: white;
+	padding: 5px;
+	font-size: 12px;
+	height: 25px;
+	width: 65px;
+	font-family: "Roboto";
+	cursor: pointer;
+	margin-left: 10px;
+}
+
+.put-btn:hover{
+	background-color: black;
+	border: 2px solid white;
+}
+
+.put-btn{
+	background-color: violet;
+	border-radius: 5px ;
+	border: none;
+	color: white;
+	padding: 5px;
+	font-size: 12px;
+	height: 25px;
+	width: 65px;
+	font-family: "Roboto";
+	cursor: pointer;
+	margin-left: 10px;
+}
+
+.del-btn:hover {
+	background-color: black;
+	border: 2px solid white;
+	color: white;
+}
+
+.del-btn {
+	background-color: white;
+	border-radius: 5px ;
+	border: none;
+	color: black;
+	padding: 5px;
+	font-size: 12px;
+	height: 25px;
+	width: 65px;
+	font-family: "Roboto";
+	cursor: pointer;
+	border: 2px solid black;
+	margin-left: 10px;
+}
