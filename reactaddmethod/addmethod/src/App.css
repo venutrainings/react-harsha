@@ -65,7 +65,6 @@ tr,td,th {
   /* flex-wrap: wrap; */
   /* background-color: black ; */
   height: 100vh;
-  background-color: black;
 }
 
 .data-btn:hover{
