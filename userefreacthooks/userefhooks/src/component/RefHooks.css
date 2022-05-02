@@ -1,0 +1,35 @@
+.bg-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(153, 153, 238);
+    height: 100vh;
+}
+
+.input-element {
+    padding-left: 5px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    height: 25px;
+}
+
+.value-heading {
+    color: white;
+}
+
+.span-value {
+    color: black;
+}
+
+.focus-btn {
+    background-color: orange;
+    color: white;
+    font-size: 15px;
+    border: none;
+    border-radius: 8px;
+    height: 20px;
+    
+}
