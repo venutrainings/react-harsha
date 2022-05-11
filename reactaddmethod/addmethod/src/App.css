@@ -63,7 +63,7 @@ tr,td,th {
   justify-content: center;
   align-items: center;
   /* flex-wrap: wrap; */
-  /* background-color: black ; */
+  background-color: rgb(171, 171, 239) ;
   height: 100vh;
 }
 
@@ -95,6 +95,9 @@ tr,td,th {
   flex-direction: column;
   justify-content: center;
   width: 30%;
+  border: 2px solid black;
+  padding: 15px;
+  background-color: rgb(154, 234, 234);
 }
 
 .form-heading {

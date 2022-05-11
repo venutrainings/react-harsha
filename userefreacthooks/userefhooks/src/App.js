@@ -7,6 +7,4 @@ function App() {
     <RefHooks />
   )
 }
-
-
 export default App;

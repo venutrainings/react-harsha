@@ -1,0 +1,62 @@
+.increment-btn:hover{
+    box-shadow: 10px 5px 5px black;
+    width: 80px;
+    height: 35px;
+}
+
+
+.increment-btn {
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    margin-right: 15px;
+    height: 25px;
+    margin-top: 10px;
+    
+}
+
+.decrement-btn:hover {
+    box-shadow: 10px 5px 5px black;
+    width: 80px;
+    height: 35px;
+}
+
+.decrement-btn{
+    background-color: rgb(16, 48, 16);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    margin-right: 15px;
+    height: 25px;
+    margin-top: 10px;
+}
+
+.reset-btn:hover{
+    box-shadow: 10px 5px 5px black;
+    width: 80px;
+    height: 35px;
+}
+
+.reset-btn {
+    background-color: rgb(41, 20, 93);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    margin-right: 15px;
+    height: 25px;
+    margin-top: 10px;
+}
+
+.bg-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    color: red;
+    /* margin-bottom: 10px; */
+}

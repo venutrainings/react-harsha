@@ -1,57 +1,70 @@
 import React from 'react';
-import {useRef,useState,useEffect} from "react";
 
-import "./RefHooks.css"
+import {useState,useEffect,useRef} from "react";
+
+import "./RefHooks.css";
 
 function RefHooks() {
-    const inputElement = useRef();
 
-    const focusInput = () => {
-        inputElement.current.focus();
-    }
+  const [inputValue,setInputValue] = useState("");
 
-    const [inputValue,setValue] = useState("")
-    const previousValue = useRef("")
-    const count = useRef(0);
+  const inputElement = useRef();
 
-    useEffect(() => {
-        count.current = count.current + 1
-    })
+  const focusInput = () => {
+    inputElement.current.focus();
+  };
 
-    useEffect(() => {
-        previousValue.current = inputValue;
-    },[inputValue])
+  const previousElement = useRef("");
+
+  const count = useRef(0);
+
+  
+
+  useEffect(() => {
+    previousElement.current = inputValue;
+    count.current = count.current + 1;
+  },[inputValue])
+
 
   return (
     <div className='bg-container'>
-        <input ref={inputElement} className='input-element' type = "text" placeholder='Enter Text Here' onChange={(event) => setValue(event.target.value)}/>
-        <input className='input-element' type = "text" placeholder='Focus Input' />
 
-        <button className='focus-btn' onClick={focusInput}>
-            Focus Input
-        </button>
+      <div className='heading-container'>
+        <h1 className='heading'>
+          useRef
+        </h1>
+        <input ref={inputElement} 
+          className='input-element' type = "text" placeholder='Enter Input Value Here' 
+          onChange={(event) => setInputValue(event.target.value)} />
 
-        <h1 className='value-heading'>
+          <input onChange={(event) => setInputValue(event.target.value)}  className='input-element' type = "text" placeholder='Enter Focus Input Here' />
+
+          <button onClick={focusInput} className='focus-btn'>
+            Focus btn
+          </button>
+
+        
+
+          <h1 className='value-inputs'>
             Current Value : <span className='span-value'>
-            {inputValue}
+            {inputValue}  
             </span>
-        </h1>
-        <h2 className='value-heading'>
+          </h1>
+
+          <h1 className='value-inputs'>
             Previous Value : <span className='span-value'>
-            {previousValue.current}
+            {previousElement.current}  
             </span>
-        </h2>
+          </h1>
 
-        <h1 className='value-heading'>
+          <h1 className='value-inputs'>
             Render Count : <span className='span-value'>
-            {count.current}
+            {count.current}  
             </span>
-        </h1>
-
-
-    </div>
+          </h1>
+        </div>
+      </div>
   )
 }
 
-
-export default RefHooks
+export default RefHooks;

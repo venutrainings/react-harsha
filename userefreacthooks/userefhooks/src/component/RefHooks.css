@@ -3,33 +3,89 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(153, 153, 238);
+    background-color: white;
     height: 100vh;
+    /* rgb(46, 91, 91) */
+}
+
+.heading-container:hover{
+    width: 900px;
+    height: 700px;
+}
+
+.heading-container {
+    background-color: rgb(183, 82, 82);
+    padding: 15px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 10px 10px;
+    height: 600px;
+    cursor: pointer;
+}
+
+.heading:hover{
+    font-size: 60px;
+}
+
+.heading {
+    font-family: "Roboto";
+    font-size: 45px;
+    /* text-shadow: 3px 3px; */
+    color: white;
+    cursor: pointer;
+}
+
+.input-element:hover {
+    border: 4px solid blue;
+    color: blue;
+    height: 50px;
 }
 
 .input-element {
-    padding-left: 5px;
-    margin-top: 15px;
+    margin-top: 20px;
     margin-bottom: 20px;
-    border: 2px solid black;
     border-radius: 10px;
-    height: 25px;
+    height: 35px;
+    padding-left: 15px;
+    box-shadow:10px 5px 5px black;
+    cursor: pointer;
 }
 
-.value-heading {
+.focus-btn:hover {
+    height: 40px;
+    width: 150px;
+    font-size: 25px;
+    box-shadow: 10px 5px 5px black;
+}
+
+.focus-btn {
+    margin-top: 15px;
+    background-color: orange;
     color: white;
+    font-size: 15px;
+    height: 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
 }
 
 .span-value {
     color: black;
+    cursor: pointer;
 }
 
-.focus-btn {
-    background-color: orange;
+.value-inputs:hover{
+    color: blue;
+    /* font-size: 50px; */
+    cursor: pointer;
+}
+
+.value-inputs {
     color: white;
-    font-size: 15px;
-    border: none;
-    border-radius: 8px;
-    height: 20px;
-    
+    font-size: 30px;
+    cursor: pointer;
 }

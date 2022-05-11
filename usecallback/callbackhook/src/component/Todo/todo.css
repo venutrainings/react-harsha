@@ -1,0 +1,41 @@
+.bg-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.todo-heading {
+    text-align: center;
+}
+
+.todo-btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.new-todo {
+    text-align: center;
+    color: red;
+}
+
+.todo-btn {
+    background-color: rgb(143, 143, 223);
+    color: white;
+    border-radius: 6px;
+    border: none;
+    height: 30px;
+    font-size: 15px;
+    box-shadow: 5px 5px black;
+    margin-bottom: 10px;
+}
+
+.input-element {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    padding-left: 15px;
+    height: 35px;
+    border: 2px solid blue;
+    box-shadow: 8px 8px;
+}
