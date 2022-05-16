@@ -1,0 +1,43 @@
+.bg-container {
+    display: flex;
+
+    flex-direction: row;
+
+    justify-content: space-around;
+}
+
+.form-container {
+    display: flex;
+
+    flex-direction: column;
+
+    margin: 25px;
+}
+
+.table-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px;
+}
+
+.label-element {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: 900;
+}
+
+.input-element {
+    padding-left: 15px;
+    height: 25px;
+}
+
+.submit-btn {
+    margin-top: 10px;
+    height: 20px;
+    
+}
+
+tr,td,th{
+    border: 2px solid black;
+}
